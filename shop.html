@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koala</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+    <script src="app.js"></script>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">Koala:About Me</a>
+            <a href="./like.html">What I Like</a>
+            <a href="./harm.html">What Harms Me</a>
+            <a href="./form.html">Adopt:Your Own Koala</a>
+            <a href="#">Koala Shop</a>
+            <a href="https://forms.gle/fUx3ioEukm5LTFt47">Koala Quiz Time</a>
+        </div>
+    </div>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776; MENU</span>
+
+    <section id="top">
+        <div class="heading">
+            <div class="heading-info">
+                <div class="thing">
+                    <h1>Koala Gift Shop</h1>
+                    <table>
+                        <tr>
+                            <th>Check Box</th>
+                            <th>S.no</th>
+                            <th>Item</th>
+                            <th>
+                                Product <br />
+                                Image
+                            </th>
+                            <th>Size</th>
+                            <th>Price</th>
+                            <th>Quatity</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id="" /></td>
+                            <td>1</td>
+                            <td>Koala T-Shirt</td>
+                            <td><img src="https://ae01.alicdn.com/kf/H9b87f28476da4e5c8195055260a83882C/Cute-Funny-Koala-T-shirt-Wild-Animal-Koala-Bear-3D-Print-Summer-Fashion-T-Shirts-Women.jpg"
+                                    alt="" />
+                            </td>
+                            <td>
+                                Small <br />
+                                Medium <br />
+                                Large
+                            </td>
+                            <td>Rs.250 <br> $ 4</td>
+                            <td><input type="number" name="" id="quatnity" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id="" /></td>
+                            <td>2</td>
+                            <td>Koala Stuffed Animal</td>
+                            <td>
+                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUXGRgaFxcYFxcYFxoYGBoXFxgYFxsaHSggGBolHhcXIjEhJSkrLi4vGB8zODMtNygtLisBCgoKDQ0OFQ8PFS0ZFRktKy0rKy0rNy0rKy0rLTctNzcrNy03LSstNy0rNysrKystKy0rLSstKy03KysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcCAQj/xAA8EAABAwIDBQcDAwIGAgMBAAABAAIRAyEEEjEFQVFhcQYigZGhsfAywdEHE+EjUhRCYoKi8TNyQ5KyFf/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAZEQEBAQADAAAAAAAAAAAAAAAAEQECEiH/2gAMAwEAAhEDEQA/AO4oiICIiAiIgIiICIiAiIgIiICIiAiLBisW1gJJ03Sgzoqi/toxjiHNkWggxe82joveyu1YrP0yt0ufg3ILWi8seCJBBHEL0gIiICIiAiIgIiICIiAiIgIiICIiAiIgIvj3ACSYCj622KYNpPQecIJFFB19qvOmVo3Tc6dVq1O0DmHvFh5X385QWZRWP23TYCGnM7QRpffzUSe1BykSyYNwSDfeOipm3O0DKZOW+l/uhFvx/aWo1psBMwRrpYDmoLH7auC95JI0GlxwHVV/Abb/AHQ57joCGjeTugeflzUDiq5DjPwoLDXxVNznOI+rQcoiyj27QLahIPdEmBEX3cLAKJq4hrRJMndffyCw4SqSZcco5wYA33QdF2Z2ueIEQDYEkjzgGyvWw9pms2e5YXhxJ8bBcUp1JcO9PP8Ajcuhdj8eC4S0W0J1v7Ki/ogRQEREBERAREQEREBfCV9UftauGsLs0EaaffVBsHGNmJ0Ws3a9MuLZuNRvA4xw5iVSsXtOq90iLco9iZ8VF7UoF4/qMaRrYwR0tKDqL8awR3hfS/3TFYoMZm14Lj2E2m6hanVJF+44kx0Oo81kxXamqR3ql4G6NND1QdNZt5s94QOPn/C94jbbY7kOPWw6rilfbteo+JtrI3jf9lP4LHua3KTJIsfmiKueL2iTd7p5f5fJRGI2pc/NVXsXtBxA3cRz3+a1HYjfPPnHEcYQbdbbziXyYtbwk+y1H48vGYHU+8wowPDnmTY5h4m680KgbB3H/wDQt7qDfr1ZMzw+6j6tPO6d1hfjr86L7hnZgXHQECON4WZ15jhbhrJ81RG4ej+2JB53XnE4luriMwFuXQblnazNMnjp5WWvXwYJv9PIkDxjUoiNw9QPfck+seAU43BkQYMdDp5La2bg2g2t0U1UwctkRPjHXqs5q6i6LgG2EHiVLdnMR3+PiR/ymRpxutCnh3CcxjzWTCE5xlcRzi3jb2IW0dm2ZUBptgg23GYW2q92Vqw3K4ODjcScw8CLeasKgIiICIiAiIgIiINLFVoB7wHjHquc9qcZVY4Fku1kRJ65tCeI4LpuIotI7wkKh9psHSNQ/t2PEtN/uionD1XObmAGb+0kj1haG0tqlwLHNLSP9Q9CIlbpw5LSCCba2dHpmHkq9jsJVJIa3Pw7pB8CDYKUaGRrnEk+pHmVr1qJBtLh19iQF8Ow8a531ftjnBPzxUjgtiPbd1QuI4ifNOxG1g6IsA2As+JpkC2o9ui26dIRvB3j7hR+KqGRfpHz0QalbFGTwOo91HYxzp7p0kjgR13j8r7jGOcY1538jyXmvTLW3kxzuPyqI3/FOzBjZjNPQaR7KwYBoy5XwTBNokkzod2vooJrgJmDN8wAnodx4gjgUw2OAtPPXeQRB9FBLVxDBl0NwOGsLNTYS0T9I1Hzy8VF1MVO+w3e33Uu+uwMDnuDWdVRjqgTA5D+AldhOVgIB9lgZVpvbmomYJ8Sd629nvBIzW5byiM+As7KdysuHHdUJhA0nMON+ckqeoGyxPVa9elKrtWnVFUFjWuANxmLTHKFb3NWvTwQe8AWO481pFw7H4wOYAc7T/a6/iHCzh0VnURsHDFjMr2gOEEGInn1UuqCIiAiIgIiICIiCJ2xintBDWzxMgQqXiA9z+8LbocD5D+SuiYmjmaRoeKrW0sAWk28rBBEteIi8jSY9wV6wNOxFjPBbODqGYOnVb1LBjMCBqporuNwxG5RraJm25WzadHUKv1qZbK55k1pHVXQb25/lR20GZXS0G/C48luVqszNiPP8FajSHXJ7zfALojy+mcveieMx5gqA2lVcx3euPKDwOs+yge02Oc6q/8AqkZDAaCRaQCbTJ+wKkjWNXBUnPu6XCYPeDTAJ/KCH2jiyJMR9/soc7TN7TwK9bWqSco0Uags2zdpNfAJh3A7/VZu0hcabczu62bXgk5Ym2qqtJ0EFW3ZmNdlEmfm9Ueex76n7oygFsd7UAHhff6KysoH9x0kHz8ua9bNoUmg/tgNmZAMXPAbui+Bji7KSYHKB4WgoJnZ9GCFPYYyFC7LZDrT5/wrD/8Azntax4uHyWxffBCiDmqd7J7PDnF7t2gPuFo7O2e+o4Atc0HUxbjvV1wODbSblbp805dVRsoiICIiAiIgIiICIiAtTH4YOGl1togp1aiWu4BSuz3h1hoPnmtzGYEGStHCNyGEH3G0FXtpYaxVlxBlRuMoyFhVBxeHkmbFaNLAlriS60cZPgFO46lBIgn5zsoPEUL2aRfifRURmI7K4d8u77ZMk3BO/eo7azLQwRTaMrRoIHVWKq4kQXSPD7KMxOGDmukg+Uq0c/2xGYAbhdRqmdsYMtcctwolzUHgKf2CZUCGqY2BVGeI6oLnhJFv+/Rbea4gG3T0WthqZ/ytt/6/ytl9F4c0hw5hUS2ySXPDYuSux4HAtbRYxwBgDz191zDshgy/EMjjJXXAiPjWgaBfURAREQEREBERAREQEREBERAWnjMLmFtVuIgrtUuae980QEFpJ0U5Xwwdr8iY91rU9mtGt0FP2hgrk3BVYxvAt9LrqW2cMzJJsRpzPBVLF7Pa8nLGb1Uiqi1oPJ3OCfJa2NwZO8wpvFbMLRAEGdf5WrVw+gcZNh46eigom2tjOJJaL3+6pmIwVVhgtMaaSu0HDAAwLQY57ifnNRWNwIkQLW3eB9PZFcupbNqvIAaZPEQrJsLYpZr9U3Vow2ypmQRwPBb2EpNvuI14GEGHBUA0QRE8NPJZmU2zczlWXEYto4AfPNRbsV+5JA+e61mMrZ2W2m2lVDzYaHoei6zSqBwDgZBEhcBwNY8fuuwdk9t0qtJlPMBUAgtOtuCCwoiICIiAiIgIiICIiAiIgIiICIiAiLDjKmVjiNQEELtjE5nGNG+U7yqxTj98ODjInTTx5KVxjoZfxUBicQGsA3Ey6FBt43aH1Z2CJ1mFAbT2gwAEWHEjQWn5yKyY454BENZHDwAA5qNxTg8xqBa2n/Z+6K3hj6YOUmIGp4afcrxXxFCYLgTr4D+FGV6E5jvgT1gfaFHOwQc4iNC0dbO180ElV29TAJFwLSN5kgKCxW3s7S1ndM/UbDS/zksm0cPAAa2BJzG8dLa7lBYikCSYsO7G/cZ0VGd+OcWkkEgb9YnhyW/sjFFwg6ceJ8N6jwGtgC4gSePEH16ELdw1QNM6A3EDQ75v/CImMHWJspCniXUnh7bFQ2AeOPzwUlixLAfnsqOpdke1ArgMqH+pxiARz5q1LgmAxZpuDmkgi9p8F2PsvtUV6IcXAuGoGvioJhERAREQEREBERAREQEREBERAWttF39N3Oy2VH7ZdDR1QVba9QWB1Vax2KBBc/QHgbncFLbaxBaZMfYcyq+2q1zX3kh0ydB84KBmzsJI6jwMT+Oi80qQyi1+G/mfdecJUAnUiLjn9lmwwggAag9YMR7HzKKwChJO6Z9p+6CgAHObZx94Wd4hwaLX15X/AJXuv3mGNJJPTUe/sgq+1gDl70AmOQuo2rhhms4hg4nUzmJ8vxwUvXplwcALN1dp4AcVgbQzAtP+WMoG8kRHsfNBGmk0ODoOSGhxABgzExwndzWZhBAc5oa3c4kwYjdHzTcvtV2UlrTIbcncJBgczJPpG9YqWFLgYcdSMnmR1OvkqN2nUn6BAG87+hUh/wDCZP3UdhacCNfFbNV2VgmwcY+SriFIb7E6xKn+ze1n0KgcCQJGYcRzCgm0B9QNjz3j28FmzC0+d0He8NWD2tcNCAfkLKqB2B2/cUHaH6Xb54Hir+oCIiAiIgIiICIiAiIgIiICh9tuuBwGqmFC7c1nkg592iJzQDIG77qu4UkNcDvff7+G7zU7txzpMGOgg363nnKqFZwDXsLznNyReNLA8AJOtj1UxXuliiC8NdZwLp5zHopDB4+IB1IiTw4Hmq+G93XUCOVjPnIPgsb3R3Z6eI3eMeS0i8NqiC+QTBPhC+trAEM/uAvzIb+VU9kbUgljzp7Tv8yVPGoNRew+dVFZcfTFJwYJ70zwHXmoqnSyvIANpObW5mf+lMbQJJJ4eHiVAVnuMQSL3I9h1+aIjWq0y0zpJ8SRvPKRHisPes/iCRxgQfn5W7iTJIjdHnuCw4lx0AMd5g6QHT6epRWbAAEkXt6cr6i61e1VUgU2jcZJHzx8FIbOw894aG91FbSxf77yGjutsCZvFjHzcg9UtoAhrRpx3rdpvi4cf92nRQhogHUgdbeP5Ug7DS0EPtKIsey8WQQ4GCL2XbNmYn9ykx8zmaD471+eMO8zfdv/AJBEeK6v+nO2S4Gg7ddv3H3QXpERAREQEREBERAREQEREBRO3Ke/iD6KWUTt8w3nB+yDlfaNzgS1oJJN7n3n0VZfRuHF0n8y1w9VZu0Tb2379NdVV/8AEND8zrt7wI1Ft54aqYrDjWkPDdIuJ4WEH7HmFF4mt3gCPyNx+/opPHVCZcDItfeAR62n+bqGxEgEzJ1tvGq0DHf1CZuIkqx9ncXmqAE6X8dyqeFqEzO8q09kaQ/ccTFh4np5IJfE4ghxnQgi/NRoYQ3MSYm2i29ps1J46ngos1c8czMbzwjl9goNipUvIiTYcLSTHGPm5Y3uJLIFgfOZnwgj1Ww6jmLY3gjoDc35w3zWzhWAvFvp9bxPsg19v4v9mjlaRmfbwuCYVZwjpymbT+Bc/NeSz7cxIq1nkTlaA0eGv3WHC/S07i4z0/7QZHCTmkjUcRY6RuK3cBiIlpOYdQemv4WKthpZY96RAP8A9v4TCUiXA/5hr8+ac0Ek+AZEyd0D1Vg7NY9zKjXb2keXLioYUpE7tB7tPuPBSezBpOvuiO50Koc0OGhAI6Fe1H9n6mbD0j/pA8rfZSCAiIgIiICIiAiIgIiICidvfT4H+FLKt9ocUGy5xgD7X8EHOduUS17g4zefEC+vyyptZ4LoaDBIB3EGbEefrCtW2to/uYgi3dmfFunQEqobSGXuEHvST1Fx4TeFMVmo0oDm7iIgbt4twsfMqHxtMsB3KRFINu+pH9rptHCB8nqtHG4ym4QamYHgD7GFRqYN2h3K09k2x+5UIMAZW8ydYWrsbY1MND3kuG4aDx3lTdPEGwZDWiwAEDoAgw7TJcGgg3mxEW58BotWuyLExxdHDcOA/K2auJcDJyu4AyQDuuLnp6KNxDn1Sc0XmAN3M8Tf3Qb9HHS8QNLj0AHLeFs4nEBlA1RuEeNoPo1R1OiQ3NvDsv3B9Vr9oa/9AUm6uc0xwiZn0TDUDXeQ3mTLjzWSliYYO7Ose3jvK2GYd5EuiOY8I5BfKBa7ukQA6x3Tp9wqjFRc9xuSRr5QY8h6KYDiHZiLaDjEeuo8lhoUQ1o46CYvrwPGVnaCWzvYJ/5G3koqUwU5YJmYLXevipXCUjZR2zWktA3fm/orb2ZwBqVaY3TPSLojo+xGFtCmDrlC3kCICIiAiIgIiICIiAiIg81HgAk2AEkrlHaPtIK/7opmGNJH/sui9psNUqYaoylGYjTiN4HMrjlXZ1VjnUxSqDjNN2ombxb+Fnk1il7T2gA8m/U6rXqbZMRM6wd94t0WLblABxEydbLQYxpaGmbCYUw1nqvc8RJPATxUrgNlsZDnjMdw4FQOz6hzhoN5gTu5qxVw4wRJOg6pq4mzVDQATYbtB86r5nzNaQRvmAPnD4VXMTh6ovUcQNw1X3CUapEk5W/ZWpE9iJgXgQZI4TG7iZ+afKdMgh0cPUgk+QUZUrOy5c26PCIEdF5wHaNrS5r7i0dcwkeRPkrUT+1MQKVF5N5LI9QfyqXUxjy4uzG/kpTtHtNlSkwMdPel3LKAB7qJNFuUAb4klNHqlWe6TmtwOizUKsHKQC3fET4L5XcKbYG/fuXjC0zGbNIUqxOYV9NxLQZBM5SIvESP7St6tRAdl/uHmI18yVDMIa9p3nUclbG0g9jSBdpt47vMK1I2tkYUzHzmut9nNlNo0w4iHuHendy5aBVzsf2aOUVXxBggcQOKvQCpr6iIiCIiAiIgIiICIiAiIgIiIKP2r/TehinOqUi2jUf9RyZmk8YkQfFVs/oi36v8YQ4/V/SGW2kd6Y6krriKQrlFH9FaDA6oa9SpVjuQGsZPMXJ8wo7Hfp5i3fthlEAN177JP/JdoRItfnHbnZDHZoFGsSIiKTiPAgQrBs79MMe5gLnUWSAYe45h1yNIkdV25EhXIz+j1RzYdi2gnXLTJHhLpJXzCfoRhx/5cXWJ/wBDWMH/ACDl11EiVys/ofhADkxOIkgxn/ac2eJAYD6qHw36M4h0tqVqTRuLc7ib8CBFr6rtiKjkuJ/RcOZH+KvlI/8AHaT/ALphNh/ouKdq2LzN4U6eUn/c5zvZdaRSLVKw/wCl2z2nNkqF1pcajjMcvpHgFK0+x+Fb9LSBwzflWBFUeabAAABAAgDkF6REBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH//Z"
+                                    alt="" />
+                            </td>
+                            <td>
+                                Small <br />
+                                Medium <br />
+                                Large
+                            </td>
+                            <td>
+                                Rs.160 <br />
+                                $ 2.50
+                            </td>
+                            <td><input type="number" name="" id="quatnity"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id="" /></td>
+                            <td>3</td>
+                            <td>Koala Cap</td>
+                            <td>
+                                <img src="https://www.dogopet.com/v/vspfiles/photos/012390GRY-5T.jpg" alt="" />
+                            </td>
+                            <td>
+                                Small <br />
+                                Medium <br />
+                                Large
+                            </td>
+                            <td>Rs.85 <br> $ 1.16</td>
+                            <td><input type="number" name="" id="quatnity" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id="" /></td>
+                            <td>4</td>
+                            <td>Koala Key Chains</td>
+                            <td>
+                                <img src="https://media.karousell.com/media/photos/products/2014/05/10/australia_koala_keychain_1399704339_7e9d167d.jpg"
+                                    alt="" />
+                            </td>
+                            <td>
+                                Small <br />
+                                Medium <br />
+                                Large <br />
+                            </td>
+                            <td>Rs.20 <br> $ 0.27</td>
+                            <td><input type="number" name="" id="quatnity" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id="" /></td>
+                            <td>5</td>
+                            <td>Koala Chains</td>
+                            <td>
+                                <img src="data:image/jpeg;base64,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"
+                                    alt="" />
+                            </td>
+                            <td>
+                                Small <br />
+                                Medium <br />
+                                Large <br />
+                            </td>
+                            <td>Rs.60 <br> $ 0.82</td>
+                            <td><input type="number" name="" id="quatnity" /></td>
+                        </tr>
+                    </table>
+
+                    <p>One Last
+
+                        Step , Please Enter Your Address , Email id and Phone Number
+                    </p>
+                    <input type="text" class="mobile" placeholder="Enter your address" />
+                    <br>
+                    <input type="text" class="mobile" placeholder="Enter your mobile number" />
+                    <br>
+                    <input type="text" class="mobile" placeholder="Enter your emal id" />
+                    <br>
+                    <button>
+                        <div class="button" id="button" onclick="buy()"><b> Buy Now </b></div>
+                    </button>
+                    <br>
+                    <h4 id="thanks">Thank you for shopping with us!!!</h4>
+                    <h3>Your order will be ariving in a few days</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
